@@ -35,8 +35,7 @@ const updateUI = (data) => {
 const updateCity = async (city) => {
   const cityDetails = await getCity(city);
   const weather = await getWeather(cityDetails.Key);
-  // But how can we access varibles that are defined in another file?
-  // Note that "forecast.js" has been defined above "app.js" in the html file and so when we are working with the app.js file these variables are already known and don't need any separate declaration
+  
   return {
     cityDetails,
     weather
